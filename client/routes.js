@@ -6,15 +6,27 @@ angular.module('whoIsChamp').config(['$stateProvider', '$urlRouterProvider', '$l
     $urlRouterProvider.otherwise('not-found');
 
     $stateProvider
-    .state('home', {
-        url: '/',
-        templateUrl: 'views/home/home.html',
-        controller: 'HomeCtrl',
-        controllerAs: 'vm'
-    })
-    .state('not-found', {
-        url: '/not-found',
-        templateUrl: 'directives/error/error.html'
-    });
+        .state('home', {
+            url: '/',
+            views: {
+                'header': {
+                    templateUrl: 'directives/header/header.html'
+                },
+                'body': {
+                    templateUrl: 'views/home/home.html'
+                }
+            }
+
+        })
+        .state('not-found', {
+            url: '/not-found',
+            views: {
+                'header': {},
+                'body': {
+                    templateUrl: 'directives/error/error.html'
+                }
+            }
+
+        });
 
 }]);
