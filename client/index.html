@@ -14,7 +14,7 @@
     <!-- build:css app.css -->
 
     <!-- bower:css -->
-    <link rel="stylesheet" href="bower_components/videogular-themes-default/videogular.css">
+    <link rel="stylesheet" href="bower_components/bootstrap-css/css/bootstrap.min.css">
     <!-- endinject -->
 
     <link rel="stylesheet" href="styles/css/app.css">
@@ -24,45 +24,34 @@
   </head>
   <body>
 
-    <strong>whoIsChamp</strong>
-
-    <div ui-view></div>
+    <div class="container">
+      <div ui-view></div>
+    </div>
 
     <!-- build:js app.js -->
 
     <!-- bower:js -->
-    
     <script src="bower_components/jquery/dist/jquery.js"></script>
-
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    
     <script src="bower_components/angular/angular.js"></script>
-    
     <script src="bower_components/angular-route/angular-route.js"></script>
-    
     <script src="bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-    
     <script src="bower_components/angular-cookies/angular-cookies.js"></script>
-    
     <script src="bower_components/angular-resource/angular-resource.js"></script>
-    
     <script src="bower_components/angular-sanitize/angular-sanitize.js"></script>
-    
     <script src="bower_components/angular-animate/angular-animate.js"></script>
-    
     <script src="bower_components/lodash/lodash.js"></script>
-    
     <script src="bower_components/videogular/videogular.js"></script>
-    
+    <script src="bower_components/bootstrap-css/js/bootstrap.min.js"></script>
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     <script src="bower_components/restangular/dist/restangular.js"></script>
-    
     <!-- endinject -->
 
     <!-- inject:js -->
     <script src="app.js"></script>
-    <script src="directives/error/error.directive.js"></script>
-    <script src="directives/header/header.directive.js"></script>
     <script src="views/home/home.controller.js"></script>
+    <script src="directives/header/header.directive.js"></script>
+    <script src="directives/error/error.directive.js"></script>
+    <script src="routes.js"></script>
     <!-- endinject -->
 
     <!-- endbuild -->

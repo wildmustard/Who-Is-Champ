@@ -1,9 +1,8 @@
-'use strict;'
+'use strict';
 
-angular.module('whoIsChamp').config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function($stateProvider, $urlRouterProvider, $locationProvider) {
+angular.module('whoIsChamp').config(['$stateProvider', '$urlRouterProvider', '$locationProvider', function ($stateProvider, $urlRouterProvider, $locationProvider) {
 
     $locationProvider.html5Mode(true);
-
     $urlRouterProvider.otherwise('not-found');
 
     $stateProvider
