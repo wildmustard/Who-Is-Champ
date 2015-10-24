@@ -57,7 +57,7 @@
     "mongoose": "^4.0.1",
     "morgan": "^1.5.1",
     "restangular": "^1.5.1",
-    "ripe": "^0.2.0",
+    "ripe": "^0.2.0"
   },
   "scripts": {
     "start": "node server/server.js",
