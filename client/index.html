@@ -26,13 +26,15 @@
 
     <strong>whoIsChamp</strong>
 
-    <div ng-view></div>
+    <div ui-view></div>
 
     <!-- build:js app.js -->
 
     <!-- bower:js -->
     
     <script src="bower_components/jquery/dist/jquery.js"></script>
+
+    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
     
     <script src="bower_components/angular/angular.js"></script>
     
@@ -52,16 +54,15 @@
     
     <script src="bower_components/videogular/videogular.js"></script>
     
-    <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
-    
     <script src="bower_components/restangular/dist/restangular.js"></script>
     
     <!-- endinject -->
 
     <!-- inject:js -->
     <script src="app.js"></script>
+    <script src="directives/error/error.directive.js"></script>
+    <script src="directives/header/header.directive.js"></script>
     <script src="views/home/home.controller.js"></script>
-    <script src="views/home/home.js"></script>
     <!-- endinject -->
 
     <!-- endbuild -->
