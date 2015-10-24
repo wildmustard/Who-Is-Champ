@@ -5,8 +5,4 @@ angular.module('whoIsChamp')
 
     var vm = this;
 
-    angular.extend(vm, {
-      name: 'HomeCtrl'
-    });
-
   });

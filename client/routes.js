@@ -9,8 +9,6 @@ angular.module('whoIsChamp').config(['$stateProvider', '$urlRouterProvider', '$l
     .state('home', {
         url: '/',
         templateUrl: 'views/home/home.html',
-        controller: 'HomeCtrl',
-        controllerAs: 'vm'
     })
     .state('not-found', {
         url: '/not-found',
